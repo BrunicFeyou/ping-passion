@@ -53,7 +53,8 @@
 					'theme_location' => 'header-menu',
 					'menu_id'        => 'header-menu',
 					'menu_class' =>  'header-menu', 
-					'menu_container' => 'nav'
+					'menu_container' => 'nav',
+					
 				)
 			);
 			?>
