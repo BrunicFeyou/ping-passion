@@ -1,3 +1,4 @@
+
 .post-type-archive-revetements .page-header {
     display: flex;
     flex-direction: column;
@@ -7,7 +8,7 @@
     align-items: center;
     gap: 30px;
     background: rgb(220,16,16);
-background: linear-gradient(90deg, rgba(220,16,16,1) 0%, rgba(245,246,31,1) 36%, rgba(28,160,202,1) 70%, rgba(172,172,172,1) 100%);
+    background: linear-gradient(90deg, rgba(220,16,16,1) 0%, rgba(245,246,31,1) 36%, rgba(28,160,202,1) 70%, rgba(172,172,172,1) 100%);
 }
 
 .revet-text {

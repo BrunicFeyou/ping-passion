@@ -68,6 +68,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 @import url(css/archive-revetements.css);
 @import url(css/archive-bois.css);
+@import url(css/single-revetements.css);
+@import url(css/single-bois.css);
  *{
 	box-sizing: border-box;
 	margin: 0;
@@ -107,6 +109,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	/* padding-right: 15px; */
 
  }
+
+ .header-menu a {
+ text-decoration: none;
+ color: black;
+ }
+
+ .header-menu a:hover{
+	text-decoration: underline;
+ }
+
+ aside{
+	display: none;
+ }
+
 
  
 

@@ -25,13 +25,17 @@ get_header();
 				the_post();
 				?>
 					<div class="bois-cards">
+						<div class="blanc-img">
                         <?php the_post_thumbnail();  ?>
+						</div>
 						<div class="bois_content">
 							<h2>
+							<a href="<?php the_permalink();?>">
 							<?php the_title();?>
+						    </a>
 							</h2>
 							<?php the_excerpt();?>
-							<a href="<?php the_permalink();?>">En savoir +</a>
+							
 					    </div>
 					</div>
 

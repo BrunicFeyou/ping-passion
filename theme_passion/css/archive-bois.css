@@ -1,5 +1,7 @@
 
-
+.post-type-archive-bois .site-main{
+    margin-top: 55px;
+}
 .post-type-archive-bois .page-header {
     width: 100%;
     height: 200px;
@@ -7,7 +9,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border-bottom: 1px solid black;
+
    position: relative;
    
 }
@@ -38,5 +40,78 @@
     
 }
 
+.bois-wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.blanc-img{
+    width: 100%;
+    height: 97px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+.blanc-img img {
+
+    width: 90px;
+    height: 100%;
+    object-fit: cover;
   
+}
+
+.bois-cards{
+    grid-column: 1/2;
+    width: 95%;
+    height: auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+    
+    
+}
+.bois_content {
+ width: 100%;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-top: 1px solid black;
+ text-align: center;
+ padding: 20px  25px 10px 25px;
+ gap: 20px;
+ 
+}
+
+
+
+.bois_content a {
+    text-decoration: none;
+    color: rgb(196, 80, 31)
+    
+   }
+   
+.bois_content a:hover{
+       color: rgb(87, 64, 33); 
+       text-decoration: underline;
+   }
+
+.bois_content p {
+    width: 500px;
+}
+
+.posts-navigation {
+    display: none;
+}
 
