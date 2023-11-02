@@ -1,4 +1,6 @@
-
+.post-type-archive-revetements .site-main {
+    margin-top: 60px;
+}
 .post-type-archive-revetements .page-header {
     display: flex;
     flex-direction: column;
@@ -52,10 +54,6 @@
     -webkit-box-shadow: 11px 1px 27px -9px rgba(66, 68, 90, 1);
     -moz-box-shadow: 11px 1px 27px -9px rgba(66, 68, 90, 1);
     box-shadow: 11px 1px 27px -9px rgba(66, 68, 90, 1);
-    
-    
- 
-    
 
 }
 
@@ -100,3 +98,17 @@
 
 
 
+@media screen and (max-width:810px) {
+    .carte-revetements{
+        grid-template-columns: 1fr;
+        margin-bottom: 300px;
+
+    }
+    .desc-text{
+        width: 70%;
+    }
+
+   .menu-menu-header-container .header-menu {
+    gap: 5px;
+   }
+}

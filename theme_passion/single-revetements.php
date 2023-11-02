@@ -6,6 +6,7 @@
  *
  * @package Theme_Passion
  */
+$datarevetements = get_fields();
 
 get_header();
 ?>
@@ -28,7 +29,18 @@ get_header();
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
-			endif;
+			endif;?>
+			<div class="div_infos">
+            <section class="infos_revet">
+				<h2>Informations revêtements</h2>
+				<p>Contrôle : <?= $datarevetements['controle']?> </p>
+				<p>Rapidité : <?= $datarevetements['rapidite']?>  </p>
+				<p>Adhérence : <?= $datarevetements['adherence']?> </p>
+				<p>Epaisseur : <?= $datarevetements['epaisseur'] ?> </p>	
+			</section>
+			</div>
+			<?php
+
 
 		endwhile; // End of the loop.
 		?>

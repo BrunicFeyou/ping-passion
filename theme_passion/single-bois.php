@@ -17,7 +17,7 @@ get_header();
 			the_post(); ?>
 
             <div class="body_bois_card">
-				<div class="card">
+				<div id="card" class="cards">
 				  <h2 class="title"> <?php the_title();?> </h2>
 				 <div class="img-revetements"> <?php the_post_thumbnail(); ?></div>
 				 <?php the_excerpt();?>	

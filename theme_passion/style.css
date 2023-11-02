@@ -86,6 +86,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	/* justify-content: space-between; */
 	align-content: center;
 	padding: 15px;
+	background-color: rgb(255, 255, 255, 0.5);
+	box-shadow: rgba(12, 137, 182, 0.9) 0px 7px 29px 0px;
+	
+	
+	
+	
  }
 
  .menu-menu-header-container {
@@ -112,7 +118,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
  .header-menu a {
  text-decoration: none;
- color: black;
+ color: rgb(12, 137, 182)
  }
 
  .header-menu a:hover{
@@ -122,8 +128,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  aside{
 	display: none;
  }
+ footer {
+	display: none;
+}
 
-
- 
+@media screen and (max-width:810px) {
+   .menu-menu-header-container .header-menu {
+    gap: 5px;
+   }
+}
 
  

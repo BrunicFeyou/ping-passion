@@ -115,3 +115,24 @@
     display: none;
 }
 
+@media screen and (max-width:1555px) {
+    .post-type-archive-bois .page-header h1 {
+        left: 185px;
+    }
+      
+}
+
+@media screen and (max-width:675px) {
+    .post-type-archive-bois .page-header h1 {
+        left: 140px;
+    }
+      
+}
+
+@media screen and (max-width:430px) {
+    .post-type-archive-bois .page-header h1 {
+        left: 41px;
+    }
+      
+}
+

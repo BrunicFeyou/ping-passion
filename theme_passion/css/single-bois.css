@@ -10,7 +10,7 @@
 
 }
 
-.card {
+.body_bois_card .cards {
     width: 500px;
     height: 600px;
     display: flex;
@@ -25,7 +25,7 @@
     border: 1px solid #fff;
 }
 
-.img-revetements {
+.body_bois_card .img-revetements {
     width: 100%;
     height: auto; 
     display: flex;
@@ -33,7 +33,7 @@
     gap: 25px;
 }
 
-.img-revetements img {
+.body_bois_card .img-revetements img {
     width: 270px;
     height: 270px;
     object-fit: cover;
@@ -41,7 +41,7 @@
     border-radius: 5px;
 }
 
-.card p {
+.body_bois_card .cards p {
    text-align: center;
    width: 450px;
    color: #fff;
@@ -49,7 +49,7 @@
    font-size: 17px;
 }
 
-.card h2 {
+.body_bois_card .cards h2 {
     color: #fff;
     text-decoration: underline;
     font-size: 40px;
@@ -75,8 +75,46 @@
 
 .btn_acheter button:hover {
     background-color: rgba(198, 124, 63, 0.911);
-    border-radius: 5px;
-    
-    
-    
+    border-radius: 5px; 
 }
+
+@media screen and (max-width:390px) {
+    .body_bois_card .cards p {
+        width: 360px;
+    }
+
+    .body_bois_card .cards {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .bois-cards {
+     width: 370px;
+
+    }
+
+    .bois_content p{
+        width: 350px;
+    }
+
+    .desc-bois-text {
+        width: 300px;
+    }
+
+    .post-type-archive-bois .page-header h1 {
+        left: 17px;
+    }
+       
+        
+    }
+
+
+    @media screen and (max-width:870px) {
+        .body_bois_card {
+            grid-template-columns: 1fr;
+            gap: 15px;
+            padding-bottom: 25px;
+        }
+    }
+    
