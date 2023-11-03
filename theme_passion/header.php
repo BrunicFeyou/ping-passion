@@ -19,44 +19,29 @@
 
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'theme_passion' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'theme_blanc' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$theme_passion_description = get_bloginfo( 'description', 'display' );
-			if ( $theme_passion_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $theme_passion_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
+    <header id="masthead" class="site-header">
+	<?php if( get_field('logo', 81) ): ?>
+		<div class= "logo">
+      <img  src="<?php the_field('logo', 81); ?>" />
+	  </div>
+       <?php endif; ?>
 		<nav id="site-navigation" class="main-navigation">
-			
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'theme_blanc' ); ?></button> -->
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'header-menu',
 					'menu_id'        => 'header-menu',
 					'menu_class' =>  'header-menu', 
-					'menu_container' => 'nav',
-					
+					'menu_container' => 'nav'
 				)
 			);
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+</div>

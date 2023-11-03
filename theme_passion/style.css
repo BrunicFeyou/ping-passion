@@ -83,20 +83,38 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	width: 100%;
 	height: auto;
 	display: flex;
-	/* justify-content: space-between; */
-	align-content: center;
+	justify-content: space-between;
+	align-items: center;
 	padding: 15px;
 	background-color: rgb(255, 255, 255, 0.5);
-	box-shadow: rgba(12, 137, 182, 0.9) 0px 7px 29px 0px;
-	
-	
-	
+	box-shadow: rgba(12, 137, 182, 0.9) 0px 7px 29px 0px;	
+ }
+
+
+ .main-navigation {
+
+	flex-grow: 1;
+ }
+
+
+ .logo {
+	width: 172px;
+	height: auto;
 	
  }
 
- .menu-menu-header-container {
-	flex-grow: 1;
+ .logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	flex-shrink: 1;
+ }
 
+ .main-navigation {
+	display: flex;
+    flex-direction: row;
+	justify-content: flex-end;
+	gap: 10px;
 
  }
 
@@ -118,7 +136,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
  .header-menu a {
  text-decoration: none;
- color: rgb(12, 137, 182)
+ color: rgb(113, 121, 124)
  }
 
  .header-menu a:hover{
